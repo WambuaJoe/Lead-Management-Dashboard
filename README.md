@@ -1,73 +1,133 @@
-# Welcome to your Lovable project
+# Lead Management Dashboard
 
-## Project info
+A modern web application for tracking, managing, and visualizing sales leads.  
+This dashboard helps teams keep an eye on lead flow, lead status, and key performance indicators related to lead engagement and conversion.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+**URL**: 
 
-## How can I edit this code?
+## 🧩 Project Overview
 
-There are several ways of editing your application.
+Lead Management Dashboard is a client-side application built with **Vite**, **TypeScript**, **React**, and **Tailwind CSS** (based on the project structure). It provides interactive visualizations and a user-friendly interface to:
 
-**Use Lovable**
+- View a list of leads
+- Filter and search leads by status or other criteria
+- Display summary metrics (total leads, conversion rate, top sources, etc.)
+- Support future integrations with backend services for lead CRUD operations
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 🚀 Features
 
-Changes made via Lovable will be committed automatically to this repo.
+> This section should be expanded once actual features are confirmed. Example features:
 
-**Use your preferred IDE**
+- 🎯 **Lead List View** – Paginated and sortable table of active leads
+- 🔍 **Search and Filters** – Filter by name, status, source, date range
+- 📊 **Dashboard Metrics** – KPI cards for quick insights (e.g., total leads, conversion rate)
+- 📈 **Charts & Graphs** – Visualize lead distribution by stage or source
+- 🛠 **Modular UI Components** – Reusable UI powered by React and Tailwind
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🧠 Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+| Layer | Technology |
+|-------|------------|
+| Frontend | React |
+| Tooling | Vite |
+| Language | TypeScript |
+| Styling | Tailwind CSS |
+| UI Components | (Optional) e.g., Headless UI / Radix / Custom Components |
 
-Follow these steps:
+## 📁 Repository Structure
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+```text
+├── public/                  # Static assets
+├── src/                     # Application source code
+│   ├── components/          # Reusable UI components
+│   ├── pages/               # Page views
+│   ├── services/            # API helpers (if any)
+│   ├── styles/              # Tailwind / global CSS
+│   └── main.tsx             # App entry point
+├── .gitignore
+├── package.json
+├── tailwind.config.ts
+├── tsconfig.json
+└── vite.config.ts
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🧪 Installation
 
-# Step 3: Install the necessary dependencies.
-npm i
+Clone the repo locally:
+```
+git clone https://github.com/WambuaJoe/Lead-Management-Dashboard.git
+cd Lead-Management-Dashboard
+```
+Install dependencies:
+```
+npm install
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## 🚧 Running Locally
+
+Start the development server:
+```
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+By default, Vite serves the app at http://localhost:5173 (or another available port).
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🛠 Available Scripts
+Script	Description
+```
+npm run dev	        # Start local dev server
+npm run build	    # Compile production build
+npm run preview	    # Preview build locally
+npm run lint	    # Run code linter (if configured)
+```
 
-**Use GitHub Codespaces**
+## 📦 Environment Variables
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+If this project integrates with an API or backend service, configure environment variables in a .env file at the project root:
+```
+VITE_API_URL=https://example.com/api
+```
 
-## What technologies are used for this project?
+## 📊 Screenshots (Optional)
 
-This project is built with:
+Add screenshots here once the UI is fleshed out.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
 
-## How can I deploy this project?
+## 🧩 How It Works
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+This project is a dashboard — an interactive UI that summarizes data visually and allows users to slice and dice information about sales leads. Dashboards like this are meant to give at-a-glance insights into performance metrics and workflow state without drilling into raw data tables .
 
-## Can I connect a custom domain to my Lovable project?
+## 🧪 Testing (Optional)
 
-Yes, you can!
+If tests are added later:
+```
+npm test
+```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🚀 Deployment
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+You can deploy the production build to any static host (Netlify, Vercel, GitHub Pages, Cloudflare Pages, etc.):
+```
+npm run build
+```
+
+Then upload the dist/ folder or connect the repository to your hosting provider.
+
+## 📄 Contributing
+- Fork the repo
+- Create your feature branch
+```
+git checkout -b feature/YourFeature
+```
+- Commit your changes
+```
+git commit -m "Add feature"
+```
+- Push your branch
+```
+git push origin feature/YourFeature
+```
+- Open a Pull Request
+
+## 📜 License
+This project is licensed under the MIT License.
