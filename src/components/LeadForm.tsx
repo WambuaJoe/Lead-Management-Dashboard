@@ -9,9 +9,12 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { AlertCircle, Loader2, Send } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
-export function LeadForm() {
+interface LeadFormProps {
+  onSuccess?: () => void;
+}
+
+export function LeadForm({ onSuccess }: LeadFormProps) {
   const navigate = useNavigate();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -19,6 +22,7 @@ export function LeadForm() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm<LeadFormData>({
     resolver: zodResolver(leadSchema),
@@ -55,6 +59,11 @@ export function LeadForm() {
         throw new Error(`Webhook returned ${response.status}`);
       }
 
+      // Call onSuccess callback if provided (for dialog close)
+      if (onSuccess) {
+        onSuccess();
+      }
+      
       navigate('/submitted', { state: { lead: payload } });
     } catch (err) {
       setError(
@@ -68,15 +77,7 @@ export function LeadForm() {
   };
 
   return (
-    <div className="animate-fade-in">
-      <div className="mb-6">
-        <h1 className="text-xl font-semibold text-foreground">Submit New Lead</h1>
-        <p className="mt-1 text-sm text-muted-foreground">
-          Enter lead information to send to the processing workflow.
-        </p>
-      </div>
-
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 max-w-md">
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         <div className="space-y-2">
           <Label htmlFor="name">Name</Label>
           <Input
@@ -151,7 +152,6 @@ export function LeadForm() {
             </>
           )}
         </Button>
-      </form>
-    </div>
+    </form>
   );
 }

@@ -6,8 +6,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "next-themes";
 import Index from "./pages/Index";
 import Submitted from "./pages/Submitted";
-import Admin from "./pages/Admin";
-import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,8 +20,6 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/submitted" element={<Submitted />} />
-            <Route path="/admin" element={<Admin />} />
-            <Route path="/settings" element={<Settings />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
