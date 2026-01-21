@@ -10,8 +10,8 @@ const ENCRYPTED_KEY = 'leadProcessorConfigEnc';
 
 // Fixed webhook endpoints (do not expose in UI)
 const DEFAULT_CONFIG: AppConfig = {
-  submitWebhookUrl: 'https://6a64980551d7.ngrok-free.app/webhook-test/submit-lead',
-  readWebhookUrl: 'https://6a64980551d7.ngrok-free.app/webhook-test/list-leads',
+  submitWebhookUrl: 'https://6a64980551d7.ngrok-free.app/webhook/submit-lead',
+  readWebhookUrl: 'https://6a64980551d7.ngrok-free.app/webhook/list-leads',
   adminPassword: '', // No default password - must be set by user
 };
 
