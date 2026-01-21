@@ -1,6 +1,6 @@
 # Lead Intake Hub
 
-A modern lead management system with a React frontend and n8n automation workflow backend for capturing, validating, and processing sales leads.
+A modern lead management system for capturing, validating, and processing sales leads.
 
 **Live Demo:** [Lead Management](lead-management-dash.vercel.app/)
 
