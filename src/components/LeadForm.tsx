@@ -81,7 +81,7 @@ export function LeadForm() {
           <Label htmlFor="name">Name</Label>
           <Input
             id="name"
-            placeholder="John Smith"
+            placeholder="eg John Smith"
             {...register('name')}
             className={errors.name ? 'border-destructive' : ''}
           />
@@ -95,7 +95,7 @@ export function LeadForm() {
           <Input
             id="email"
             type="email"
-            placeholder="john@company.com"
+            placeholder="eg john@company.com"
             {...register('email')}
             className={errors.email ? 'border-destructive' : ''}
           />
@@ -109,7 +109,7 @@ export function LeadForm() {
           <Input
             id="phone"
             type="tel"
-            placeholder="+1 (555) 123-4567"
+            placeholder="eg +1 (555) 123-4567"
             {...register('phone')}
             className={errors.phone ? 'border-destructive' : ''}
           />
@@ -122,7 +122,7 @@ export function LeadForm() {
           <Label htmlFor="company">Company</Label>
           <Input
             id="company"
-            placeholder="Acme Corp"
+            placeholder="eg Acme Corp"
             {...register('company')}
             className={errors.company ? 'border-destructive' : ''}
           />
