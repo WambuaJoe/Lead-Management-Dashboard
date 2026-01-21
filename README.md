@@ -2,7 +2,7 @@
 
 A modern lead management system with a React frontend and n8n automation workflow backend for capturing, validating, and processing sales leads.
 
-**Live Demo:** [lead-intake.netlify.app](https://lead-intake.netlify.app)
+**Live Demo:** [Lead Management](lead-management-dash.vercel.app/)
 
 ---
 
