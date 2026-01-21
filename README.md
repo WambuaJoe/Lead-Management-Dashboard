@@ -3,7 +3,7 @@
 A modern web application for tracking, managing, and visualizing sales leads.  
 This dashboard helps teams keep an eye on lead flow, lead status, and key performance indicators related to lead engagement and conversion.
 
-**URL**: 
+Website: [**Lead Intake**](https://lead-intake.netlify.app/)
 
 ## 🧩 Project Overview
 
