@@ -1,0 +1,4 @@
+{
+  "submitWebhookUrl": "https://ae485a6b2636.ngrok-free.app/webhook/submit-lead",
+  "readWebhookUrl": "https://ae485a6b2636.ngrok-free.app/webhook/list-leads"
+}
